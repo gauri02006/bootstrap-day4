@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>animation</title>
+    
+    <style>
+        
+    .color-changing-animation {
+            width: 100px;
+            height: 100px;
+            animation-name: change-color;
+            background-color:red;
+            animation-duration:4s;
+        }
+        .multiple-changing-animation {
+            width: 100px;
+            height: 100px;
+            animation-name: multiple-color;
+            background-color:red;
+            animation-duration:10s;
+        }
+        .logo {
+            color:red;
+            animation-name:bounce;
+            animation-duration: 0.5s;
+            animation-iteration-count: 0.5s;
+        }
+
+        @keyframes change-color {
+            form {background-color:red;}   
+            to {background-color:green;}
+        }
+        @keyframes bounce {
+            0% {transform: translateY(0px);}
+            50% {transform: translateY(20px);}
+            100%{transform: translateY(0px);}
+        }
+        .new-collection {
+            text-align: center;
+            font-size: 30px;
+            position: relative;
+
+        }
+        
+        .new-collection::before {
+            content:"";
+            width:4px;
+            height:40px;
+            background-color:red;
+            position:absolute;
+                        transform: translateX(-15px);
+
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Color changing animation</h1>
+    <div class="color-changing-animation"></div>
+    <div class="multiple-changing-animation"></div>
+    <br>
+    <!--<div class="multiple-color-changing-animation"></div>-->
+    <h1 class="logo">attire</h1>
+    <div class="new-collection">new collection</div>
+</body>
+</html>

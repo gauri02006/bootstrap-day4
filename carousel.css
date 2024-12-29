@@ -1,0 +1,9 @@
+.crousel-item{
+    height: 300px;
+}
+.crousel-item{
+    img{
+        height: 100%;
+        object-fit: cover;
+    }
+}
